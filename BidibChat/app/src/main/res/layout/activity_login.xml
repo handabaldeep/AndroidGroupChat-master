@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity" >
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_sign_in"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/picture"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:visibility="gone"
+        />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="370dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="18dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="18dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_logout_from_google"
+        android:layout_marginTop="400dp"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/show_groups"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_show"
+        android:layout_marginTop="450dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgProfilePic"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

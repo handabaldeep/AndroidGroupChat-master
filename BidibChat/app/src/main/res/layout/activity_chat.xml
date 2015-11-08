@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    >
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/include" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_recycler_view"
+        android:scrollbars="vertical"
+        android:background="@color/md_black_1000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:layout_above="@+id/chat_panel"
+        />
+
+    <LinearLayout
+        android:id="@+id/chat_panel"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/button_material_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:textColor="@color/md_white_1000"
+            android:id="@+id/chatTextField"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:onClick="performSend"
+            android:id="@+id/send_button"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
